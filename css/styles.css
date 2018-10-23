@@ -1,0 +1,291 @@
+
+/* ========================================
+  STYLES,MARGINS,PADDINGS CLEARS
+======================================== */
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+/* ========================================
+  GENERAL CSS
+======================================== */
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  color: #424242;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8a8a8a;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  font-size: .9em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+p {
+  font-size: .9em;
+  font-weight: 300;
+}
+
+header {
+  text-align: center;
+  background-color: #F8F8F8;
+  padding: 30px 0;
+}
+
+.main-title {
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+.main-nav li {
+  background-color: #fff;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.main-nav li a {
+  display: block;
+  padding: 10px 0; 
+}
+
+.bio {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.bio img {
+  max-width: 70%;
+  margin-top: 20px;
+}
+
+.bio p {
+  padding: 0 10px;
+  color: #666;
+  font-size: 1em;
+}
+
+
+#portfolio {
+  text-align: center;
+  margin-bottom: 80px;
+  background-color: #fff;
+}
+
+.portfolio-title {
+  margin: 50px 0;
+}
+
+#portfolio li {
+  margin-bottom: 45px;
+}
+
+#portfolio img {
+  max-width: 90%;
+  margin: 5px auto;
+}
+
+#portfolio p {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.greybckg {
+  background-color: #F8F8F8;
+}
+
+#contact {
+  text-align: center;
+  padding: 60px 0;
+  border-bottom: 1px solid #DBDBDB;
+  border-bottom-width: thin;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: .9em;
+  padding-bottom: 35px;
+}
+
+#contact ul {
+  margin-top: 30px;
+}
+
+#contact li {
+  margin-bottom: 15px;
+}
+
+#contact h3 {
+  display: inline;
+  font-weight: 200;
+  font-size: 1em;
+  color: #888;
+}
+#contact p {
+  max-width: 90%;
+  margin: 0 auto;
+  color: #666;
+  font-size: 1em;
+}
+
+#contact a {
+  padding-left: 10px;
+  font-weight: 600;
+  color: #888;
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 25px 0;
+}
+
+footer h1 {
+  font-size: .9em;
+}
+
+footer a {
+  font-size: .8em;
+  font-weight: 700;
+}
+
+.footer-name {
+  display: inline-block;
+}
+
+.footer-top {
+  display: inline-block;
+  float: right;
+}
+
+.footer-nav {
+  display: none;
+}
+
+/* ========================================
+ MEDIA QUERIES
+======================================== */
+
+/* TABLETS */
+
+@media screen and (min-width: 768px) {
+  .main-nav li {
+    background-color: #F8F8F8;
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .bio img {
+    max-width: 50%;
+    float: right;
+  }
+
+  .bio p {
+    max-width: 50%;
+    float: left;
+    font-size: 1.4em;
+    text-align: left;
+  }
+
+  .col {
+    max-width: 50%;
+    margin: -4px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  footer {
+    padding-bottom: 80px;
+}
+
+  .footer-top {
+    display: none;
+  }
+
+  .footer-nav {
+    display: inline;
+    float: right;
+  }
+
+  .footer-nav li {
+    float: left;
+    padding-left: 10px;
+  }
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* LARGE DISPLAYS */
+
+@media screen and (min-width: 1024px) {
+  .top-bar {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .main-title {
+    float: left;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .bio p {
+    padding: 0;
+  }
+
+  .bio img {
+    padding: 0;
+  }
+
+  .main-nav li {
+    padding-right: 0;
+    padding-left: 15px;
+  }
+
+  .col {
+  max-width: 30%;
+  }
+
+  #portfolio {
+  margin-bottom: 30px;
+ }
+}
+
